@@ -1,13 +1,13 @@
 class Crewkit < Formula
   desc "Observability and governance for AI-assisted engineering teams"
   homepage "https://crewkit.io"
-  version "0.7.12"
+  version "0.7.13"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/karibew/crewkit-cli/releases/download/v0.7.12/crewkit-v0.7.12-aarch64-apple-darwin.tar.gz"
-      sha256 "64e7d087c310918c8c4d5145ba0dc62abf7c97a40fc44e40cd7ed3f63f400541"
+      url "https://github.com/karibew/crewkit-cli/releases/download/v0.7.13/crewkit-v0.7.13-aarch64-apple-darwin.tar.gz"
+      sha256 "ec296f00172359175183c90be0912fadbd489c21ad18c7a46f4aa0e9cec6abe6"
 
       def install
         bin.install "crewkit"
@@ -21,8 +21,8 @@ class Crewkit < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/karibew/crewkit-cli/releases/download/v0.7.12/crewkit-v0.7.12-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "5c5b90bd45a434c6960292cd05cee785552e7620277635d6b1d93cf48b475b8a"
+      url "https://github.com/karibew/crewkit-cli/releases/download/v0.7.13/crewkit-v0.7.13-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "503d9931a17db4b7ea2b3c9cfb6ea9804bd5de23c48fa7bd32fa963776681b2f"
 
       def install
         bin.install "crewkit"
